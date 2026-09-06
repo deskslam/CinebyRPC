@@ -1,0 +1,15 @@
+{
+  "name": "cineby-rpc-packaging",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling: bundles app/ into a standalone helper executable.",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:linux": "node build.mjs --linux"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.6.0",
+    "esbuild": "^0.25.0"
+  }
+}

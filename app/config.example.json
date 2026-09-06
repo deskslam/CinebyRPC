@@ -1,0 +1,11 @@
+{
+  "discordClientId": "",
+  "wsPort": 3100,
+  "tmdbApiKey": "",
+  "activityType": "watching",
+  "showButtons": true,
+  "idleTimeoutSec": 90,
+  "minUpdateIntervalMs": 4000,
+  "smallImageAssetKey": "",
+  "largeImageFallbackKey": ""
+}

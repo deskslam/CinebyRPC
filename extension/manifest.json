@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Cineby Discord Rich Presence",
+  "version": "1.0.1",
+  "description": "Shows the movie, show or anime you're watching on cineby.rocks as Discord Rich Presence.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq5rW0nkUhw79wraa5ZbKbvzbjJc9vmZV3BG+cB4DFKkPuU60uXpHOyWm9E4U+I02ZPuaqiZUaOn2dpZxrXjTkXHjY83CtDmL/PfciqG5Onw0iOhTb++4tjsC56oKF9V7msKDJJBMnuPhBarS4uo2IgOUT+CrTJWpdkFBbxb8IuwrNm80yihjAXEITILkVDLO5EALs4GR5pBTCIjhmSxl2yP5He0tDM4RKb3zg5tvIJA69mTMpBPDvmnvTHR0p6VyP5ZSq1Tt6v+im0xIB/OKSagi9eXhSI5mkmxU1v+MfrP0TOFTi1ydS1/G8jz8qygMu2Qv5O343w3+BrdFksDkSQIDAQAB",
+  "permissions": ["storage", "nativeMessaging", "alarms"],
+  "host_permissions": ["*://*.cineby.rocks/*", "*://cineby.rocks/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.cineby.rocks/*", "*://cineby.rocks/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

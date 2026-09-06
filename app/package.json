@@ -1,0 +1,21 @@
+{
+  "name": "cineby-rpc-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local helper: relays Cineby playback from the browser extension to Discord Rich Presence.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "cineby-rpc": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "config": "node src/index.js --print-config"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
