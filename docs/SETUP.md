@@ -5,7 +5,7 @@ extension**. And your **Discord desktop app** has to be open — the phone app a
 the website don't have the connection this uses.
 
 New here and wondering what any of this actually is? Read
-[PLAIN-ENGLISH.md](../PLAIN-ENGLISH.md) first.
+[PLAIN-ENGLISH.md](../readme.md) first.
 
 Everything below is Windows + a Chrome-family browser (Chrome, Brave, Edge).
 
